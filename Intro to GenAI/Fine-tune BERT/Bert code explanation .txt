@@ -1,0 +1,19 @@
+Explanation of the Code
+Part 1: Fine-Tuning BERT
+Dataset: Loads the IMDb dataset and tokenizes it using bert-base-uncased.
+Model: Uses BertForSequenceClassification with 2 labels (positive/negative).
+Training: Sets up a Trainer with hyperparameters (e.g., learning rate 2e-5, 3 epochs) and trains the model. Training logs are saved automatically.
+Deliverable: The code itself, training logs in ./logs, and a saved model in ./bert-finetuned-imdb-final.
+Part 2: Debugging Issues
+Issue: Simulates overfitting by using a small dataset subset. Debugs by lowering the learning rate (1e-5), increasing regularization (weight_decay=0.1), and reducing epochs (2).
+Process: Re-trains the model and compares validation performance (visible in logs).
+Deliverable: Initial issue (overfitting), debugging steps (hyperparameter adjustments), and improved results (via logs).
+Part 3: Evaluating the Model
+Predictions: Generates predictions on a test subset.
+Metrics: Computes accuracy and F1-score using the evaluate library.
+Refinement: Adjusts batch size (to 16) and re-trains to improve stability, then re-evaluates.
+Deliverable: Metrics before and after refinement, with a reflection in the console output.
+Part 4: Creative Application
+Task: Classifies short customer reviews as positive or negative.
+Implementation: Uses the fine-tuned model on a custom dataset, showcasing real-world applicability.
+Deliverable: Final model, predictions, and a summary of techniques (fine-tuning, inference).

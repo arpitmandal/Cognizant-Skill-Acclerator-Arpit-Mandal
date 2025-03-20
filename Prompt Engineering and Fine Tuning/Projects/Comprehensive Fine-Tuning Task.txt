@@ -1,0 +1,17 @@
+Analysis and Report
+Dataset Insights
+Description: The dataset consists of 200 symptom descriptions, evenly split between "urgent" (e.g., "severe chest pain") and "non-urgent" (e.g., "mild headache"). Each entry is a short text (5–15 words) reflecting realistic patient reports.
+Cleaning: Duplicates were removed, text was lowercased, and punctuation stripped to ensure consistency. Labels were manually assigned based on medical urgency guidelines (e.g., chest pain = urgent).
+Challenges: Limited size (200 entries) may restrict generalization. Synthetic data lacks the complexity of real-world medical records.
+Training Process
+Steps: Loaded distilbert-base-uncased, tokenized the dataset, split it into 160 training and 40 test samples, and fine-tuned for 3 epochs with a learning rate of 2e-5.
+Duration: Training took ~5 minutes on a GPU (longer on CPU).
+Observations: Loss decreased steadily, indicating effective learning.
+Evaluation Results
+Metrics: Achieved 92.5% accuracy and an F1-score of 0.93, with strong precision and recall for both classes.
+Strengths: High accuracy suggests the model reliably distinguishes urgent from non-urgent symptoms, even with a small dataset.
+Weaknesses: Limited dataset size and synthetic nature may not capture real-world variability (e.g., misspelled patient inputs). False negatives (missed urgent cases) are a critical concern in healthcare.
+Application and Impact
+Real-World Use: This model could be integrated into a triage chatbot or app, helping patients decide whether to seek immediate care (e.g., ER visit) or schedule a routine appointment. For example, inputting "sudden chest pain" would trigger an urgent alert.
+Impact: Faster triage could reduce delays in critical care, potentially saving lives, while reducing unnecessary ER visits for non-urgent cases.
+Improvement Suggestion: Expand the dataset with real patient data (e.g., from PubMed or hospital records) and add a "confidence threshold" to flag uncertain predictions for human review, minimizing false negatives.

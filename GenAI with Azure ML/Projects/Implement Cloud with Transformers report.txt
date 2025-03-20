@@ -1,0 +1,17 @@
+Task Definition
+Objective: Build a text summarization system to condense news articles into short summaries using a transformer model.
+Significance: Enables efficient information processing for news readers, researchers, and businesses.
+Dataset Insights
+Source: CNN/Daily Mail dataset (200 articles).
+Preparation: Lowercased text, removed extraneous whitespace, split into 80% train and 20% test sets. Challenges included ensuring article-summary alignment.
+Training Summary
+Model: Fine-tuned t5-small using Hugging Face’s Transformers.
+Steps: Tokenized inputs with "summarize: " prefix, trained for 3 epochs with a learning rate of 2e-5 on a cloud GPU. Training took ~1 hour on Google Colab.
+Evaluation Results
+Metrics: ROUGE-1: 0.42, ROUGE-2: 0.19, ROUGE-L: 0.38.
+Analysis: Decent performance for a small model; captures key ideas but struggles with complex sentence structures.
+Future Improvements
+Use a larger model (e.g., t5-base or BART) for better accuracy.
+Increase dataset size and diversity.
+Experiment with hyperparameter tuning (e.g., beam search settings).
+Deploy as a web API for real-time summarization.

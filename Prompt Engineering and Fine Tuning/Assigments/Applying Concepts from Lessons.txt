@@ -1,0 +1,26 @@
+Part 1: Techniques in Prompt Optimization
+Multiple Choice Questions:
+
+Which of the following is the most effective way to improve prompt clarity?
+Correct Answer: B) Provide detailed instructions and examples.
+What does it mean to "assign the AI a role" in a prompt?
+Correct Answer: B) Guide the AI's tone and perspective by specifying a persona.
+
+Reflection:
+Prompt optimization would streamline my content creation workflow significantly. By developing template prompts with specific parameters for tone, length, and structure, I could generate higher-quality first drafts of marketing materials and blog posts that require minimal editing. Including examples of my preferred style would help the AI match my voice, while role-based prompts would enable me to generate content from different perspectives for various marketing personas. This transforms AI from a generic tool into a customized assistant that understands my specific needs and preferences.
+Part 2: Debugging Prompt Failures
+True/False Questions:
+
+A prompt that is too broad or vague is more likely to produce irrelevant responses. TRUE
+Debugging prompts involves refining the AI model, not the input provided. FALSE
+
+Reflection:
+In healthcare communication, a poorly crafted prompt like "explain treatment options for diabetes" without specifying the type of diabetes or audience could lead to dangerous generalized advice. I would debug this by specifying the exact condition (Type 2 diabetes), defining the audience (newly diagnosed patients), setting boundaries on information to include/exclude, requesting appropriate medical disclaimers, and specifying an accessible language level. These refinements would produce information that is both accurate and appropriate for patient education, reducing misunderstandings that could affect treatment.
+Part 3: Evaluating Prompt Effectiveness
+Fill in the Blank:
+
+To evaluate prompt effectiveness, key metrics include relevance, clarity, and completeness.
+A response's relevance measures how well it aligns with the task's requirements, while completeness assesses whether all parts of the request are addressed.
+
+Reflection:
+Evaluating prompt effectiveness significantly improves my productivity in academic research. When using AI for literature reviews, the difference between vague and well-evaluated prompts can save hours of work. By systematically assessing metrics like relevance and completeness, I ensure AI focuses on methodology and findings rather than background information. This creates a valuable feedback loop that improves both the AI's performance and my skill in crafting prompts, making our collaboration increasingly efficient over time and reducing frustrating back-and-forth exchanges.

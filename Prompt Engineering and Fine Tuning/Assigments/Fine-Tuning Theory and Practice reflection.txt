@@ -1,0 +1,12 @@
+Key Challenges Faced:
+
+Environment Setup: If a GPU isn’t available, training takes significantly longer. I addressed this by ensuring the code runs on CPU if needed, though I recommend using Google Colab with free GPU access.
+Memory Issues: Large datasets can overwhelm memory. I mitigated this by using batch processing (batched=True) and a reasonable batch size (16).
+Overfitting Risk: The model might overfit if trained too long. I limited epochs to 3 and used weight decay (0.01) to regularize it.
+Suggestions for Improving Performance (if accuracy < 90%):
+
+Increase Epochs: Train for 4–5 epochs to allow better convergence, monitoring validation loss to avoid overfitting.
+Adjust Learning Rate: Experiment with 1e-5 or 3e-5 to find an optimal rate.
+Data Augmentation: Add synthetic reviews (e.g., paraphrasing) to increase dataset size and diversity.
+Hyperparameter Tuning: Use tools like Optuna to optimize batch size, learning rate, and weight decay.
+Larger Model: Switch to bert-base-uncased for potentially higher accuracy, though it requires more compute power.
